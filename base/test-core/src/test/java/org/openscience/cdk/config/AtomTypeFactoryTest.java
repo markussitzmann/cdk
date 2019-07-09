@@ -44,6 +44,7 @@ import org.openscience.cdk.interfaces.IBond;
 import org.openscience.cdk.interfaces.IBond.Order;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.w3c.dom.Document;
 import org.xml.sax.ErrorHandler;
@@ -301,26 +302,31 @@ public class AtomTypeFactoryTest extends CDKTestCase {
         Assert.assertEquals("xsd:schema", schemaDoc.getFirstChild().getNodeName());
     }
 
+    @Ignore
     @Test
     public void testXMLValidityMM2() throws Exception {
         assertValidCML("org/openscience/cdk/config/data/mm2_atomtypes.xml", "MM2");
     }
 
+    @Ignore
     @Test
     public void testXMLValidityMMFF94() throws Exception {
         assertValidCML("org/openscience/cdk/config/data/mmff94_atomtypes.xml", "MMFF94");
     }
 
+    @Ignore
     @Test
     public void testXMLValidityMol2() throws Exception {
         assertValidCML("org/openscience/cdk/config/data/mol2_atomtypes.xml", "Mol2");
     }
 
+    @Ignore
     @Test
     public void testXMLValidityPDB() throws Exception {
         assertValidCML("org/openscience/cdk/config/data/pdb_atomtypes.xml", "PDB");
     }
 
+    @Ignore
     @Test
     public void testXMLValidityStructGen() throws Exception {
         assertValidCML("org/openscience/cdk/config/data/structgen_atomtypes.xml", "StructGen");
